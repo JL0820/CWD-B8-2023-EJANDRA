@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONTAWESOME KIT -->
+    <script src="https://kit.fontawesome.com/2025a016df.js" crossorigin="anonymous"></script>
+    <!-- FONTAWESOME CDN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Materialize icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar and Sidenav</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="#263238 blue-grey darken-4">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo center">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="center">
+            <i class="fa-solid fa-bars left small menu hinde-on-large-only"></i>
+            Navbar
+        </h1>
+    </div>
+    <div class="divider"></div>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts
+            of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or
+            right.</p>
+
+        <!-- Right Aligned Links -->
+
+        <h3>Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+
+        <nav class="#039be5 light-blue darken-1">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- LEFT ALIGNED LINKS -->
+        <br><br>
+        <h3>Left Aligned Links</h3>
+        <p>
+            To left align your navbar links, just add a left class to your <'ul'> that contains them.
+        </p>
+        <nav class="#ff7043 deep-orange lighten-1">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo right">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Centering the Logo -->
+        <br><br>
+        <h3>Centering Logo</h3>
+        <p>
+            The logo will center itself on medium and down screens, but if you want the logo to always be centered, add
+            the center class to your <'a class="brand-logo"''>. You will have to make sure yourself that links do not
+                overlap if you use this.
+        </p>
+        <nav class="#c62828 red darken-3">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo center">
+                        <i class="fa-brands fa-youtube"></i></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Extended Navbar with Tabs -->
+        <br><br>
+        <h3>Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow
+            your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+
+        <nav class="nav-extended #607d8b blue-grey">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <a href="" class="brand-logo left">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab">
+                        <a href="#test1">Following</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#test2">Trending</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#test3">Your Work</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- side nav structure -->
+        <ul class="sidenav grey darken-2" id="mobile-demo">
+            <li>
+                <a href="" class="white-text">Home</a>
+            </li>
+            <li>
+                <a href="" class="white-text">About</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Contact Us</a>
+            </li>
+        </ul>
+        <!-- Tabs Structure -->
+
+        <!-- FOLLOWING -->
+        <div class="row blue-grey darken-4">
+            <div class="col s12" id="test1">
+                <div class="card-panel blue-grey darken-3">
+                    <div class="switch">
+                        <label>
+                            Recent
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            Top
+                        </label>
+                    </div>
+                </div>
+                <section class="section section-follwing-content">
+                    <div class="container">
+                        <h5 class="center white-text">
+                            You aren't following anyone yet! Maybe you could find some people to follow in Trending?
+                        </h5>
+                    </div>
+                </section>
+            </div>
+
+            <!-- TRENDING -->
+
+            <div class="col s12" id="test2">
+                <section class="section">
+                    <div class="row">
+                        <div class="col s6">
+                            <div class="card blue-grey darken-3">
+                                <div class="card-image">
+                                    <img src="images/img1.jpg" alt="" class="materialboxed">
+                                </div>
+                                <div class="card-content">
+                                    <i class="fa-brands fa-discord small white-text left"></i>
+                                    <span class="white-text">
+                                        Nested Respectful
+                                        <i class="material-icons right">
+                                            more_vert
+                                        </i>
+                                    </span>
+                                    <p class="white-text">
+                                        Adam argyle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="card blue-grey darken-3">
+                                <div class="card-image">
+                                    <img src="images/img2.jpg" alt="" class="materialboxed">
+                                </div>
+                                <div class="card-content">
+                                    <i class="fa-brands fa-discord small white-text left"></i>
+                                    <span class="white-text">
+                                        Nested Respectful
+                                        <i class="material-icons right">
+                                            more_vert
+                                        </i>
+                                    </span>
+                                    <p class="white-text">
+                                        Adam argyle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- YOUR WORK  TAB-->
+            <div class="col s12" id="test3">
+                <div class="card-panel blue-grey darken-3">
+                    <section class="section section-follwing-content">
+                        <div class="container">
+                            <h5 class="center white-text">
+                                You haven't done any work yet
+                            </h5>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height: 250px;"></div>
+
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //sidenav init
+            $('.sidenav').sidenav({
+            });
+            //tab init
+            $('.tabs').tabs();
+        });
+    </script>
+</body>
+
+</html>
